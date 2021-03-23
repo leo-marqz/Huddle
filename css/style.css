@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,900&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #674BB1;
+  background-image: url('../images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header{
+  width: 100%;
+  height: 120px;
+  display: grid;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+header img{
+  width:150px;
+  margin-left: 30px;
+}
+
+main{
+  width:100%;
+}
+
+main .grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns:1fr;
+  gap:25px;
+}
+
+.illustration{
+  width:calc(100% - 60px);
+  padding:0px 30px 0px 30px;
+  margin-bottom: 25px;
+}
+
+.illustration img{
+  width:100%;
+}
+
+.info{
+  width: calc(100% - 100px);
+  padding:0px 50px 0px 50px;
+}
+
+.info h1{
+  width:100%;
+  color: white;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.info p{
+  width:100%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 100;
+}
+
+
+.space-btn-register{
+  width:100%;
+  margin: 25px 0px 60px 0px;
+  text-align: center;
+}
+
+.space-btn-register button{
+  width:200px;
+  height:35px;
+  background:white;
+  border: 0px;
+  border-radius: 20px;
+  outline:none;
+  box-shadow:1px 1px 2px black;
+  color:#674BB1;
+  font-weight: 100;
+}
+
+.space-btn-register button:hover{
+  cursor: pointer;
+  box-shadow:2px 2px 4px black;
+  background:#E882E8;
+  font-weight: 700;
+}
+
+
+.social-networks{
+  width:100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.social-networks .social{
+  width:20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.social-networks .social .my-social{
+  width:100%;
+  height:100%;
+  fill:white;
+}
+
+.social-networks .social .my-social:hover{
+  fill: #E882E8;
+  cursor: pointer;
+}
+
+
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 800px) {
+
+  body{
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  header{
+    height:150px;
+  }
+
+  header img{
+    width:180px;
+    margin-left: 50px;
+  }
+  main .grid{
+    width:calc(100% - 60px);
+    padding: 0px 30px;
+    grid-template-columns: 60% 1fr;
+    margin-top: 50px;
+  }
+
+  .illustration{
+    width:calc(100% - 35px);
+    padding: 0px 25px 0px 10px;
+  }
+  
+  .info{
+    width:calc(100% - 20px);
+    margin-top: 20px;
+    padding:0px 10px 0px 10px;
+  }
+
+  .info h1{
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .info p{
+    text-align: left;
+  }
+
+  .space-btn-register{
+    text-align: left;
+    margin-bottom: 200px;
+  }
+
+  .space-btn-register button{
+    height: 40px;
+  }
+
+  .social-networks{
+    margin-bottom: 70px;
+    margin-left: 60%;
+  }
+
+  .social-networks .social{
+    width:30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
